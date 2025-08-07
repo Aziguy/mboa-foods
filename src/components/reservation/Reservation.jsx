@@ -80,40 +80,64 @@ const customStyles = {
 };
 
 const Reservation = () => {
-  const [startDate, setStartDate] = useState(new Date());
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [guests, setGuests] = useState({ value: '1', label: '1' });
+  const [time, setTime] = useState({ value: '08:00', label: '10:00' });
+  const [startDate, setStartDate] = useState(new Date()); 
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+
+      const dateFormatted = startDate.toLocaleDateString('fr-FR');
+      const message = `Bonjour, je souhaite réserver une table :
+
+      Noms : ${fullName}
+      Email : ${email}
+      Téléphone : ${phone}
+      Nombre de personnes : ${guests.value}
+      Date : ${dateFormatted}
+      Heure : ${time.value}
+
+      Merci d'avance !`;
+      const phoneNumber = '33769174710';
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappURL, '_blank');
+  };
 
   return (
     <section className='reservation reservation-container container'>
-      <form action='' className='reservation-form grid'>
+      <form onSubmit={handleSubmit} className='reservation-form grid'>
         <div className='reservation-group grid'>
           <h3 className='reservation-title'>Réserver votre table</h3>
           <div className='reservation-div'>
             <FaRegUser className='reservation-icon' />
-            <input type='text' placeholder='Nom complet' className='reservation-input' />
+            <input type='text' placeholder='Nom complet' className='reservation-input' value={fullName} onChange={(e) => setFullName(e.target.value)}/>
           </div>
           <div className='reservation-div'>
             <FaRegEnvelope className='reservation-icon' />
-            <input type='email' placeholder='Email' className='reservation-input' />
+            <input type='email' placeholder='Email' className='reservation-input' value={email} onChange={(e) => setEmail(e.target.value)}/>
           </div>
           <div className='reservation-div'>
             <FaPhone className='reservation-icon' />
-            <input type='tel' placeholder='Téléphone' className='reservation-input' />
+            <input type='tel' placeholder='Téléphone' className='reservation-input' value={phone} onChange={(e) => setPhone(e.target.value)} required/>
           </div>
         </div>
         <div className='reservation-group grid'>
           <div className='reservation-div'>
             <FaUserGroup className='reservation-icon' />
-            <Select options={optionsGuest} styles={customStyles} defaultValue={optionsGuest[0]} />
+            <Select options={optionsGuest} styles={customStyles} defaultValue={optionsGuest[0]} value={guests} onChange={setGuests} />
           </div>
           <div className='reservation-div'>
             <FaCalendarDays className='reservation-icon' />
-            <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} className='reservation-input' />
+            <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} className='reservation-input' dateFormat="dd/MM/yyyy"/>
           </div>
           <div className='reservation-div'>
             <FaClock className='reservation-icon' />
-            <Select options={optionsTiming} styles={customStyles} defaultValue={optionsTiming[0]} />
+            <Select options={optionsTiming} styles={customStyles} defaultValue={optionsTiming[0]} value={time} onChange={setTime} />
           </div>
-          <button className='button reservation-button'>
+          <button type='submit' className='button reservation-button'>
             Envoyer <FaCircleArrowRight className='button-icon' />
           </button>
         </div>
