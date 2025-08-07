@@ -28,7 +28,13 @@ import menuImg6 from './assets/menu-6.jpg';
 import menuImg7 from './assets/menu-7.jpg';
 import menuImg8 from './assets/menu-8.jpg';
 
-export const navLinks = ['accueil', 'a propos', 'menu', 'gallerie', 'témoignages'];
+export const navLinks = [
+  { label: 'Accueil', section: 'home' },
+  { label: 'À propos', section: 'about' },
+  { label: 'Menus', section: 'menu' },
+  { label: 'Galerie', section: 'gallery' },
+  { label: 'Témoignages', section: 'testimonials' },
+];
 
 export const homeSlide = [
   {
@@ -221,4 +227,10 @@ export const menu = [
   },
 ];
 
-export const footerLinks = ['a propos', 'menus', 'témoignages'];
+export const footerLinks = [
+  { label: 'Accueil', section: 'home' },
+  { label: 'À propos', section: 'about' },
+  { label: 'Menus', section: 'menu' },
+  { label: 'Galerie', section: 'gallery' },
+  { label: 'Témoignages', section: 'testimonials' },
+];
