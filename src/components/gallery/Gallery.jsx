@@ -21,8 +21,7 @@ const Gallery = () => {
           return (
             <div className='gallery-item' key={index}>
               <img src={gallery} alt='' className='gallery-img' />
-
-              <a href={gallery} className='gallery-link'>
+              <a href={gallery} className='gallery-link' target="_blank" rel="noopener noreferrer">
                 <RiAddLargeLine />
               </a>
             </div>
