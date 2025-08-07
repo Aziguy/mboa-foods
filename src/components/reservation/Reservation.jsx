@@ -17,24 +17,24 @@ import { ValueContainer } from 'react-select/animated';
 
 const optionsGuest = [
   { value: '', label: 'Nombre d\'invité' },
-  { value: '1', label: '01' },
-  { value: '2', label: '02' },
-  { value: '3', label: '03' },
-  { value: '4', label: '04' },
-  { value: '5', label: '05' },
+  { value: '1 personne', label: '01' },
+  { value: '2 personnes', label: '02' },
+  { value: '3 personnes', label: '03' },
+  { value: '4 personnes', label: '04' },
+  { value: '5 personnes ou plus', label: '05' },
 ];
 
 const optionsTiming = [
   { value: '', label: 'L\'heure' },
-  { value: '1', label: '08:00 - 10:00' },
-  { value: '2', label: '09:30 - 11:30' },
-  { value: '3', label: '10:00 - 12:00' },
-  { value: '4', label: '11:30 - 13:30' },
-  { value: '5', label: '12:00 - 14:00' },
-  { value: '6', label: '13:30 - 15:30' },
-  { value: '7', label: '15:30 - 17:30' },
-  { value: '8', label: '16:00 - 18:00' },
-  { value: '9', label: '17:30 - 19:30' },
+  { value: '08:00 - 10:00', label: '08:00 - 10:00' },
+  { value: '09:30 - 11:30', label: '09:30 - 11:30' },
+  { value: '10:00 - 12:00', label: '10:00 - 12:00' },
+  { value: '11:30 - 13:30', label: '11:30 - 13:30' },
+  { value: '12:00 - 14:00', label: '12:00 - 14:00' },
+  { value: '13:30 - 15:30', label: '13:30 - 15:30' },
+  { value: '15:30 - 17:30', label: '15:30 - 17:30' },
+  { value: '16:00 - 18:00', label: '16:00 - 18:00' },
+  { value: '17:30 - 19:30', label: '17:30 - 19:30' },
 ];
 
 const customStyles = {

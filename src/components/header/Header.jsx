@@ -57,7 +57,7 @@ const Header = () => {
         <div className='nav-buttons'>
           <ScrollLink
             to='reservation'
-            name='Réservez'
+            name='Réserver'
             extraProps={{ offset: -150 }}
             className='button'
             icon={<FaCircleArrowRight className='button-icon' />}
