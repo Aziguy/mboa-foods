@@ -19,13 +19,13 @@ import testimonialImg2 from './assets/testimonial-2.jpg';
 import testimonialImg3 from './assets/testimonial-3.jpg';
 import testimonialImg4 from './assets/testimonial-4.jpg';
 
-import menuImg1 from './assets/menu-1.jpg';
-import menuImg2 from './assets/menu-2.jpg';
-import menuImg3 from './assets/menu-3.jpg';
-import menuImg4 from './assets/menu-4.jpg';
-import menuImg5 from './assets/menu-5.jpg';
-import menuImg6 from './assets/menu-6.jpg';
-import menuImg7 from './assets/menu-7.jpg';
+import menuImg1 from './assets/beignet.jpeg';
+import menuImg2 from './assets/Poisson-barise.png';
+import menuImg3 from './assets/menu-1.jpg';
+import menuImg4 from './assets/menu-7.jpg';
+import menuImg5 from './assets/beignets_Haricot_Bouillie.png';
+import menuImg6 from './assets/brochette_porc.png';
+import menuImg7 from './assets/Koki.png';
 import menuImg8 from './assets/menu-8.jpg';
 
 export const navLinks = [
@@ -141,7 +141,7 @@ export const menu = [
   {
     id: 1,
     img: menuImg1,
-    category: 'Déjeuner',
+    category: 'Petit-déjeuner',
     title: 'Beignets-Haricots',
     description: 'Plat emblématique du Cameroun, servi chaud avec pain ou bouillie en option.',
     price: 8.50,
@@ -162,7 +162,7 @@ export const menu = [
 
   {
     id: 3,
-    img: menuImg3,
+    img: menuImg4,
     category: 'Dîner',
     title: 'Ndolé au bœuf & miondo',
     description: 'Feuilles de ndolé mijotées avec viande, pâte d’arachide et servis avec miondo ou bâtons de manioc.',
@@ -173,7 +173,7 @@ export const menu = [
 
   {
     id: 4,
-    img: menuImg4,
+    img: menuImg3,
     category: 'Déjeuner',
     title: 'Taro sauce jaune',
     description: 'Taro pilé accompagné de sa fameuse sauce jaune aux épices traditionnelles et viande de bœuf.',
@@ -219,9 +219,9 @@ export const menu = [
     id: 8,
     img: menuImg8,
     category: 'Dessert',
-    title: 'Gâteau à la banane',
-    description: 'Moelleux traditionnel fait à base de bananes mûres, parfait pour finir le repas.',
-    price: 4.50,
+    title: 'Foléré',
+    description: 'Le foléré, aussi parfois appelé bissap, oseille de Guinée ou fleur d\'hibiscus.',
+    price: 1.50,
     reviews: 180,
     stars: 4.9,
   },
