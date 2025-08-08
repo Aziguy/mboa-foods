@@ -13,7 +13,7 @@ const Testimonials = () => {
   return (
     <section className='testimonials section'>
       <SectionTitle
-        subtitle='Témoignages'
+        subtitle='Avis des Clients'
         title={
           <>
             Ce que nos <span>clients disent</span> de nous
