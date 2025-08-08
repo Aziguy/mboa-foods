@@ -232,5 +232,5 @@ export const footerLinks = [
   { label: 'À propos', section: 'about' },
   { label: 'Menus', section: 'menu' },
   { label: 'Galerie', section: 'gallery' },
-  { label: 'Témoignages', section: 'testimonials' },
+  { label: 'Avis Clients', section: 'testimonials' },
 ];
