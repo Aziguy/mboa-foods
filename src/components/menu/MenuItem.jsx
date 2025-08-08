@@ -16,7 +16,7 @@ const MenuItem = ({ menuItems }) => {
               <div className='menu-data'>
                 <img src={img} alt='' className='menu-img' />
 
-                <span className='menu-price'>${price}</span>
+                <span className='menu-price'>{price}€</span>
               </div>
 
               <h3 className='menu-title'>{title}</h3>
